@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b3b98;
+    font-family: 'Muli', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.password-result{
+    background-color: #151537;
+    text-align: center;
+    width: 100%;
+    margin: 0.8rem auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem;
+}
+
+.copy{
+    cursor: pointer;
+    background-color: #3b3b98;
+    font-size: 1rem;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.password{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.length{
+    width: 3rem;
+    margin-left: 6rem;
+}
+
+.password-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #22225b;
+    border: 3px solid #5154a2;
+    color: white;
+    padding: 1.5rem;
+    width: 700px;
+    max-width: 100%;
+}
+
+.password-container input{
+    margin-right: 0;
+}
+
+.btn{
+    padding: 0.5rem;
+    color: white;
+    background-color: #3b3b98;
+    border: 2px solid #627eda;
+    font-size: 1.4rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .field{
+        font-size: 1.2rem;
+    }
+    
+    body{
+        overflow: hidden;
+    }
+}

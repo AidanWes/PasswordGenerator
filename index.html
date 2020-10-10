@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="password-container">
+        <h1>Password Generator</h1>
+        
+        <div class="password-result">
+            <span class="password" id="password">!@#(*HAf91PlFu*F&2@#</span>
+            <button class="copy" id="clipboard" onclick="copy()">
+                Copy
+            </button>
+        </div>
+        
+        
+        <p class="field">
+            Password Length <input class="length" type="number" min="4" max="20" id="length">
+        </p>
+        
+        <p class="field">
+            Include uppercase letters<input class="check" type="checkbox" id="uppercase" checked>
+        </p>
+        
+        <p class="field">
+            Include lowercase letters<input class="check" type="checkbox" id="lowercase" checked>
+        </p>
+        
+        <p class="field">
+            Include numbers<input class="check" type="checkbox" id="numbers" checked>
+        </p>
+        
+        <p class="field">
+            Include symbols<input class="check" type="checkbox" id="symbols" checked>
+        </p>
+        
+        <button class="btn" onclick="generate()">Generate Password</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
